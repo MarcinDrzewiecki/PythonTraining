@@ -1,3 +1,5 @@
+__author__ = 'drzewko'
+
 import random
 
 
