@@ -61,4 +61,4 @@ What is your choice? \n""")
             raw_input("No statistic with the name " + choose_statistic + "! Press ENTER and try again...")
     else:
         raw_input("Wrong option, press ENTER to try again")
-print("You have succesfully created your hero! Congratulations!")
+print("You have successfully created your hero! Congratulations!")
