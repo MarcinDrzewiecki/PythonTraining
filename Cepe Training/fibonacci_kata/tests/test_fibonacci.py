@@ -1,13 +1,14 @@
 __author__ = 'drzewiec'
 
 from unittest import TestCase
+
 from fibonacci_kata.fibonacci import fib
+
 
 class FibonacciTest(TestCase):
 
     def test_fib_for_0(self):
         self.assertEqual(fib(0),1)
-
 
     def test_fib_for_1(self):
         self.assertEqual(fib(1),1)

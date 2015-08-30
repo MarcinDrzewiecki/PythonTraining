@@ -10,11 +10,14 @@ class Node(object):
         self.l = l
     def h(self):
         return 1+max(self.l.h(),self.r.h())
+    def s(self):
+        return node1.v + self.r.s() + self.l.s()
 
 class Nil(object):
     def h(self):
         return 0
-
+    def s(self):
+        return 0
 
 node0 = Nil()
 print node0.h()

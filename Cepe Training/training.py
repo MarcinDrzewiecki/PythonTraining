@@ -43,7 +43,7 @@ print function2()
 #map(f,l) === [f(x) for x in l]
 #filter(p.l)=== [x for x in l if p(x)]
 
-print [x**2 for  x in xrange(101) if x%2!=0]
+print [x**2 for x in xrange(101) if x%2!=0]
 
 #all(p,l)
 #any(p.l)

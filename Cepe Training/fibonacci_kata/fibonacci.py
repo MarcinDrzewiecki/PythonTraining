@@ -1,4 +1,4 @@
-__author__ = 'drzewiec'
+onet__author__ = 'drzewiec'
 
 
 def fib(number):
