@@ -19,7 +19,7 @@ class PythonOrgSearch(unittest.TestCase):
     def test_google_contains_search_bar(self):
         driver = self.driver
         driver.get("http://www.google.com")
-        driver.find_element_by_xpath("//input[@name='btnKx']")
+        driver.find_element_by_xpath("//input[@name='btnK']")
 
 
     def tearDown(self):
