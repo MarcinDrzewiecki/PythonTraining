@@ -1,4 +1,5 @@
 from selenium.webdriver.common.by import By
+import time
 
 __author__ = 'drzewko'
 
@@ -21,6 +22,14 @@ class PythonOrgSearch(unittest.TestCase):
         driver.get("http://www.google.com")
         driver.find_element_by_xpath("//input[@name='btnK']")
 
+    def test_google_search(self):
+        driver = self.driver
+        driver.get("http://www.google.com")
+        inputElement = driver.find_element_by_id("lst-ib")
+        inputElement.send_keys('eminem')
+        inputElement.send_keys(Keys.ENTER)
+        time.sleep(5)
+        self.assertIn("eminem", driver.title)
 
     def tearDown(self):
         self.driver.close()
