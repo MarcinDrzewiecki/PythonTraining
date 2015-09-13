@@ -1,12 +1,18 @@
 onet__author__ = 'drzewiec'
 
 
-def fib(number):
-    a, b = 1, 1
-    for x in xrange(number):
-        a, b = b, a + b
-    return a
+def fib(n):
+    if n == 0:
+        return 0
+    elif n <=3:
+        return 1
+    else:
+        a, b = 1, 0
+        for x in xrange(n):
+            a, b = b, a + b
+        return a
 
+print fib(4)
 
 def l(list):
     return 0 if list == [] else 1 + l(list[1:])
