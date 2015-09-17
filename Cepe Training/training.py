@@ -58,3 +58,38 @@ print [x ** 2 for x in xrange(101) if x % 2 != 0]
 
 print all([x % 2 == 0 for x in xrange(1, 11)])
 print any([x % 2 == 0 for x in xrange(1, 11)])
+print all([x%2==0 for x in xrange(1,11)])
+print any([x%2==0 for x in xrange(1,11)])
+
+
+def silnia(n):
+    return reduce(lambda x,y: x*y,xrange(1,n+1))
+
+print silnia(3)
+
+def digits_to_int(digits):
+    numbers=""
+    for x in digits:
+        numbers+=str(x)
+    numbers = int(numbers)
+    return numbers
+
+print digits_to_int([2,3,4])
+
+def digits_to_int2(digits):
+    return reduce(lambda x,y:x*10+y,digits,0)
+
+print digits_to_int2([2,3,4])
+
+
+def wielomian(*args):
+    def aux(x):
+        return reduce(lambda y,z: y*x +z,args,0)
+    return aux
+
+print wielomian(1,0,0)(7)
+
+print "-----"
+def test(n):
+    return reduce(lambda x,y:x*y, n)
+print test([1])
