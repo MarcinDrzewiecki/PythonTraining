@@ -6,9 +6,6 @@ def countBits(n):
 
 
 
-
-
-
 print reduce(lambda a,b: a+b if (a==25) else a<b, [25,25,100,50])
 
 def get_score(n):
@@ -21,7 +18,7 @@ def get_score(n):
 print get_score(10)
 
 def get_score(n):
-    return 50*reduce(lambda x,y: (x+y), xrange(n+1))
+    return 50*reduce(lambda x,y: (x+y), range(n+1))
 print get_score(4)
 
 

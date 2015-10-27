@@ -1,7 +1,7 @@
 __author__ = 'drzewiec'
 
-interval = int(raw_input("Prime number scanner will detect and add to each other all prime numbers from 2 to: "))
-how_many_prime_numbers = int(raw_input("How many prime numbers should i add to each other? :  "))
+interval = int(input("Prime number scanner will detect and add to each other all prime numbers from 2 to: "))
+how_many_prime_numbers = int(input("How many prime numbers should i add to each other? :  "))
 
 prime_numbers = []
 count=0

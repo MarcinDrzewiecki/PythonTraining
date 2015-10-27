@@ -10,12 +10,12 @@ EMPTY = " "
 
 
 def display_board(board):
-    print"\n \t", board[0], "|", board[1], "|", board[2]
-    print"\t", "---------"
-    print"\n\t", board[3], "|", board[4], "|", board[5]
-    print"\t", "---------"
-    print"\n\t", board[6], "|", board[7], "|", board[8], "\n"
-    print"\t", "---------"
+    print("\n \t", board[0], "|", board[1], "|", board[2])
+    print("\t", "---------")
+    print("\n\t", board[3], "|", board[4], "|", board[5])
+    print("\t", "---------")
+    print("\n\t", board[6], "|", board[7], "|", board[8], "\n")
+    print("\t", "---------")
 
 
 def new_board():
@@ -42,15 +42,15 @@ def human_move(board):
     while move not in legal:
         move = ask_number("What is your move?: ", 0, 9)
         if move not in legal:
-            print "Illegal move, try different one"
-        print "Good move"
+            print ("Illegal move, try different one")
+        print ("Good move")
     return move
 
 
 def ask_number(question, low, high):
     response = None
     while response not in range(low, high):
-        response = int(raw_input(question))
+        response = int(input(question))
     return response
 
 
@@ -65,7 +65,7 @@ def legal_moves(board):
 def ask_yes_no(question):
     response = None
     while response not in ("t", "n"):
-        response = raw_input(question).lower()
+        response = input(question).lower()
         return response
 
 

@@ -7,8 +7,8 @@ def group_name(i):
     return "Group " + str(i)
 
 
-team_number = int(raw_input("Number of teams: "))
-group_number = int(raw_input("Number of groups: "))
+team_number = int(input("Number of teams: "))
+group_number = int(input("Number of groups: "))
 
 groups = {}
 teams = []

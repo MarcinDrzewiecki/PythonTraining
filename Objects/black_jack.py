@@ -58,7 +58,6 @@ class Deck(Hand):
                     print("No more cards")
 
 deck = Deck()
-
 deck.populate()
 deck.shuffle()
 my_hand = Hand()

@@ -1,6 +1,6 @@
 __author__ = 'drzewiec'
 
-interval = int(raw_input("Determine interval for Fizz Buzz game: "))
+interval = int(input("Determine interval for Fizz Buzz game: "))
 fizz_buzz = []
 
 
