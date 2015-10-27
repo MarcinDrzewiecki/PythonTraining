@@ -2,7 +2,9 @@ __author__ = 'drzewko'
 
 all_cities = []
 visited_cities_list =[]
+
 how_many_cities = int(input("How many cities? "))
+
 for x in range(0,how_many_cities):
     all_cities.append(list(input("Set the coordinates for city "+ str(x+1)+":\n")))
 
@@ -28,4 +30,4 @@ def traveled_road(city):
         starting_point=city[x]
     return road + path(city[x],city[0])
 
-print(traveled_road(visited_cities_list))
+print("The mailman has traveled " + str(traveled_road(visited_cities_list)) + " units.")
