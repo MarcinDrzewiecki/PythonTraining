@@ -43,5 +43,5 @@ while (answer == "y" or answer == "Y"):
             kelvin_to_celcius(city_weather(city_name)["main"]["temp"])) + " " + u'\N{DEGREE CELSIUS}')
     else:
         print("Wrong choice, try again ? Y/N")
-    answer = input("Would you like to check the weather for different region?\n")
+    answer = input("Would you like to check the weather for different region? Y/N\n")
 print("Thanks for using our LOCAL WEATHER program!")
